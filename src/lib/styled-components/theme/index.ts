@@ -3,13 +3,13 @@ import { DefaultTheme, createGlobalStyle } from 'styled-components';
 
 export const theme: DefaultTheme = {
   colors: {
-    blueGray10: 'string',
-    blueGray100: 'string',
-    blueGray400: 'string',
-    blueGray600: 'string',
-    blueGray900: 'string',
-    primary: 'string',
-    secondary: 'string',
+    blueGray10: '#F4F8FA',
+    blueGray100: '#CBD5DC',
+    blueGray400: '#708797',
+    blueGray600: '#4D6475',
+    blueGray900: '#1E2A32',
+    primary: '#1B31A8',
+    secondary: '#0079FF',
     white: '#fff',
   },
   fontSize: {
