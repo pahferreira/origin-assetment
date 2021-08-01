@@ -7,14 +7,16 @@ import LogoPNG from 'assets/images/logo.png';
 
 // Custom
 import Header from 'components/Header';
+import Home from 'pages/Home';
 
 export function App(): JSX.Element {
   return (
-    <div data-testid="greetings-container">
+    <main data-testid="main">
       <GlobalStyle />
       <ThemeProvider theme={theme}>
         <Header logoUrl={LogoPNG} />
+        <Home />
       </ThemeProvider>
-    </div>
+    </main>
   );
 }
