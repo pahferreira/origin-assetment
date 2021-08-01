@@ -12,6 +12,7 @@ export const Content = styled.div`
   align-items: center;
   border: 1px solid ${({ theme }) => theme.colors.border};
   border-radius: 4px;
+  height: 56px;
 `;
 
 export const Icon = styled.img`
