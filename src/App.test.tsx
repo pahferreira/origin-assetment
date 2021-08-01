@@ -7,9 +7,7 @@ describe('App', () => {
     it('returns the text', () => {
       const component = shallow(<App />);
 
-      expect(
-        component.find('[data-testid="greetings-container"]')
-      ).toBeTruthy();
+      expect(component.find('[data-testid="main"]')).toBeTruthy();
     });
   });
 
@@ -17,7 +15,7 @@ describe('App', () => {
     it('returns the text', () => {
       const component = render(<App />);
 
-      expect(component.getByTestId('greetings-container')).toBeTruthy();
+      expect(component.getByTestId('main')).toBeTruthy();
     });
   });
 });
