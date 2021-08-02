@@ -18,6 +18,7 @@ declare module 'styled-components' {
       blueGray400: string;
       blueGray600: string;
       blueGray900: string;
+      border: string;
       primary: string;
       secondary: string;
       white: string;
