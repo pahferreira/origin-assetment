@@ -25,6 +25,17 @@ export const Card = styled.div`
     'result result'
     'footer footer';
   grid-template-columns: 1.4fr 1fr;
+  @media screen and (max-width: 450px) {
+    grid-template-areas:
+      'header'
+      'amount'
+      'date'
+      'result'
+      'footer';
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 35px 24px 40px;
+  }
 `;
 
 export const DateContainer = styled.div`

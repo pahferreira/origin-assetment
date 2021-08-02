@@ -12,6 +12,9 @@ export const Description = styled.h4`
   margin: 0;
   font-family: 'Work Sans';
   font-weight: 400;
+  @media screen and (max-width: 450px) {
+    font-size: ${({ theme }) => theme.fontSize.mobile.h4};
+  }
 `;
 
 export const Label = styled.h5`
@@ -21,6 +24,9 @@ export const Label = styled.h5`
   color: ${({ theme }) => theme.colors.blueGray900};
   line-height: 150%;
   margin: 0 0 4px;
+  @media screen and (max-width: 450px) {
+    font-size: ${({ theme }) => theme.fontSize.mobile.h5};
+  }
 `;
 
 export const Number = styled.h1`
@@ -30,6 +36,9 @@ export const Number = styled.h1`
   font-size: ${({ theme }) => theme.fontSize.desktop.h1};
   line-height: 120%;
   color: ${({ theme }) => theme.colors.secondary};
+  @media screen and (max-width: 450px) {
+    font-size: ${({ theme }) => theme.fontSize.mobile.h1};
+  }
 `;
 
 export const Subtitle = styled.h3<TypographyProps>`
@@ -40,6 +49,9 @@ export const Subtitle = styled.h3<TypographyProps>`
   font-size: ${({ theme }) => theme.fontSize.desktop.h3};
   line-height: 120%;
   margin: ${({ margin }) => (margin ? '24px' : '0')};
+  @media screen and (max-width: 450px) {
+    font-size: ${({ theme }) => theme.fontSize.mobile.h3};
+  }
 `;
 
 export const Text = styled.p`
@@ -48,6 +60,10 @@ export const Text = styled.p`
   line-height: 133%;
   font-weight: 400;
   font-family: 'Work Sans';
+  @media screen and (max-width: 450px) {
+    font-size: ${({ theme }) => theme.fontSize.mobile.p};
+    text-align: center;
+  }
 `;
 
 export const Title = styled.h2`
@@ -58,4 +74,7 @@ export const Title = styled.h2`
   line-height: 120%;
   font-family: 'Rubik';
   margin: 0;
+  @media screen and (max-width: 450px) {
+    font-size: ${({ theme }) => theme.fontSize.mobile.h2};
+  }
 `;
