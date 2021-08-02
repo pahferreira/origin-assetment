@@ -1,6 +1,10 @@
 // Libraries
 import styled from 'styled-components';
 
+type TypographyProps = {
+  margin?: boolean;
+};
+
 export const Description = styled.h4`
   font-size: ${({ theme }) => theme.fontSize.desktop.h4};
   color: ${({ theme }) => theme.colors.blueGray400};
@@ -28,14 +32,14 @@ export const Number = styled.h1`
   color: ${({ theme }) => theme.colors.secondary};
 `;
 
-export const Subtitle = styled.h3`
+export const Subtitle = styled.h3<TypographyProps>`
   font-family: 'Work Sans';
   font-style: normal;
   font-weight: 400;
   color: ${({ theme }) => theme.colors.blueGray900};
   font-size: ${({ theme }) => theme.fontSize.desktop.h3};
   line-height: 120%;
-  margin: 0;
+  margin: ${({ margin }) => (margin ? '24px' : '0')};
 `;
 
 export const Text = styled.p`
@@ -43,6 +47,7 @@ export const Text = styled.p`
   font-size: ${({ theme }) => theme.fontSize.desktop.p};
   line-height: 133%;
   font-weight: 400;
+  font-family: 'Work Sans';
 `;
 
 export const Title = styled.h2`

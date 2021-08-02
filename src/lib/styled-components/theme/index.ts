@@ -8,6 +8,7 @@ export const theme: DefaultTheme = {
     blueGray400: '#708797',
     blueGray600: '#4D6475',
     blueGray900: '#1E2A32',
+    border: '#E9EEF2',
     primary: '#1B31A8',
     secondary: '#0079FF',
     white: '#fff',
@@ -35,6 +36,9 @@ export const theme: DefaultTheme = {
 export const GlobalStyle = createGlobalStyle`
 * {
   box-sizing: border-box;
+}
+strong {
+  font-weight: 600;
 }
 body {
   margin: 0;
