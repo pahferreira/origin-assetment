@@ -13,7 +13,7 @@ const Home: FC = () => {
         {"Let's plan your "}
         <strong>saving goal</strong>
       </Subtitle>
-      <Planner />
+      <Planner type="house" />
     </Main>
   );
 };
